@@ -3,9 +3,6 @@ project(Celervo)
 
 set(CMAKE_CXX_STANDARD 20)
 
-# 🔧 Export compile_commands.json (for clangd, Fleet, VSCode, etc.)
-set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
-
 add_executable(Celervo
     main.cpp
     src/net/TCPServer.cpp
@@ -18,5 +15,4 @@ add_executable(Celervo
         include/util/UUID.h
 )
 
-# ✅ Link against Winsock for networking on Windows
 target_link_libraries(Celervo PRIVATE ws2_32)
