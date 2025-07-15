@@ -1,5 +1,1 @@
-# Ignore CLion IDE settings
-.idea/
-
-# Ignore CMake build directory
-cmake-build-debug/
+/target
